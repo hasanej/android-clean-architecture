@@ -1,7 +1,7 @@
 package id.hsn.clean.domain
 
-class MessageInteractor(private val messageRepository: MessageRepository) : MessageUseCase {
+class MessageInteractor(private val messageRepositoryInterface: MessageRepositoryInterface) : MessageUseCase {
     override fun getMessage(name: String): MessageEntity {
-        return messageRepository.getWelcomeMessage(name)
+        return messageRepositoryInterface.getWelcomeMessage(name)
     }
 }
