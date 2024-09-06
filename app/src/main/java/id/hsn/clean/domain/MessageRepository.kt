@@ -1,5 +1,5 @@
 package id.hsn.clean.domain
 
-interface MessageRepositoryInterface {
+interface MessageRepository {
     fun getWelcomeMessage(name: String): MessageEntity
 }
